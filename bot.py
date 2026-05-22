@@ -118,10 +118,7 @@ if __name__ == "__main__":
     keep_alive()
     
     # Start the Discord bot using the token stored in Render's Environment Variables
-    # DO NOT put your actual token string in this file if you are pushing to GitHub!
-   # token = os.environ.get("DISCORD_TOKEN")
-   # Start the Discord bot using the token stored in Render's Environment Variables
-   token = os.environ.get("DISCORD_TOKEN")
+    token = os.environ.get("DISCORD_TOKEN")
     if token:
         bot.run(token)
     else:
